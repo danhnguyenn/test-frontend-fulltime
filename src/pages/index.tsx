@@ -59,7 +59,7 @@ const Index = () => {
             defaultValue={filterStatus}
             onValueChange={handleTabChange}
           >
-            <Tabs.List className="flex gap-2 pb-4">
+            <Tabs.List className="flex gap-2 pb-10">
               {filterOptions.map((option, index) => (
                 <Tabs.Trigger
                   key={index}

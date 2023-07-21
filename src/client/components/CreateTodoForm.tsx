@@ -39,6 +39,10 @@ export const CreateTodoForm = () => {
 
   const handleSubmitForm = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
+    if (!todoBody) {
+      alert('Please enter your todo')
+      return
+    }
     createTodo({
       body: todoBody,
     })
