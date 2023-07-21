@@ -58,7 +58,13 @@ module.exports = {
         'newlines-between': 'always',
       },
     ],
-    'prettier/prettier': 'error',
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+    'comma-dangle': 'off',
   },
   overrides: [
     {
